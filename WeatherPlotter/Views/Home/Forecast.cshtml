@@ -1,0 +1,57 @@
+﻿<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" ng-click="vm.onHomepageClick()">
+            <i class="fas fa-sun"></i>&nbsp;Weather Plotter
+        </a>
+    </div>
+</nav>
+<section class="section">
+    <p class="title is-1">Forecast for:&nbsp;{{vm.forecast.City.Name}},&nbsp;{{vm.forecast.City.CountryCode}}</p>
+    <p class="subtitle is-5">Share Link:&nbsp;{{vm.getShareUrl()}}</p>
+</section>
+<section class="section">
+    <div class="columns is-centered" style="padding: 2rem">
+        <!-- Temperature -->
+        <div class="column">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div id="temperature-container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Humidity -->
+        <div class="column">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div id="humidity-container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-centered" style="padding: 2rem">
+        <!-- Rain -->
+        <div class="column">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div id="rain-container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Snow -->
+        <div class="column">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div id="snow-container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

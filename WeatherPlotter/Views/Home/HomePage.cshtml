@@ -1,0 +1,59 @@
+﻿<section class="hero is-info is-large"
+         ng-class="{'loading-mask' : vm.isSearching == true}">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" ng-click="vm.onHomepageClick()">
+                        <i class="fas fa-sun"></i>&nbsp;Weather Plotter
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Welcome to Weather Plotter</h1>
+            <div class="subtitle">
+                <input class="input" type="text" placeholder="Enter a Town or City" ng-model="vm.searchModel" ng-keypress="vm.onSearchKeypress($event)">
+                <button class="button" ng-click="vm.onSearchClick()"><i class="fas fa-search"></i>&nbsp;Search</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Plotted Map -->
+<div class="box cta" ng-show="vm.isMapLoaded == true">
+    <p class="has-text-centered">
+        Check out our Plotted Map!
+    </p>
+</div>
+<section class="section" ng-show="vm.isMapLoaded == true">
+    <div class="container">
+        <div id="map-container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </div>
+</section>
+<!-- Plotted List -->
+<div class="box cta">
+    <p class="has-text-centered">
+        See what others have Plotted!
+    </p>
+</div>
+<section class="section"
+         ng-class="{'loading-mask' : vm.isFetchingList == true}">
+    <div class="container is-fluid">
+        <div class="columns is-multiline">
+            <forecast-option class="column is-one-quarter"
+                             ng-repeat="forecast in vm.forecasts | reverse"
+                             forecast="forecast">
+            </forecast-option>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Weather Plotter</strong> by <a href="http://www.stuart-harrison.com/" target="_blank">Stuart Harrison</a>.&nbsp;Written as a technical test for ARBNCO 2019.
+        </p>
+    </div>
+</footer>

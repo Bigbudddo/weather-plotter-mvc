@@ -1,0 +1,22 @@
+﻿<!--<div style="border: 1px solid red;">
+    <button class="button" ng-click="onSelectForecastOption(forecast)">Forecast Option</button>
+
+</div>-->
+<div class="card"
+     ng-class="{'loading-mask' : isOpeningForecast == true}">
+    <div class="card-content">
+        <p>
+            <strong>{{forecast.City.Name}}</strong>
+            <small>{{forecast.City.CountryCode}}</small>
+            <br />
+            <small>{{getDurationSince()}}</small>
+        </p>
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">
+            <span>
+                <a ng-click="onSelectForecastOption(forecast)"><i class="fas fa-umbrella"></i>&nbsp;View Forecast</a>
+            </span>
+        </p>
+    </footer>
+</div>

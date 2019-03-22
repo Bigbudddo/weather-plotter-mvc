@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html ng-app="weather">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Plotter</title>
+    @Styles.Render("~/Content/core", "~/Content/main")
+</head>
+<body ng-controller="RouteController" ng-init="init(@Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag))" ng-cloak>
+    <ui-view id="main-app-view"></ui-view>
+    <!-- Scripts Definition -->
+    @Scripts.Render("~/Scripts/core", "~/App/main")
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+</body>
+</html>

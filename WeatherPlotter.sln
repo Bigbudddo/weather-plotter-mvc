@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherPlotter", "WeatherPlotter\WeatherPlotter.csproj", "{66EB7CB8-B5E5-4C1C-B9B0-21EB79D5D991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherPlotter.Api", "WeatherPlotter.Api\WeatherPlotter.Api.csproj", "{B6D3F0E3-DBC7-4C1D-AA94-6716D3FE437D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66EB7CB8-B5E5-4C1C-B9B0-21EB79D5D991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66EB7CB8-B5E5-4C1C-B9B0-21EB79D5D991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66EB7CB8-B5E5-4C1C-B9B0-21EB79D5D991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66EB7CB8-B5E5-4C1C-B9B0-21EB79D5D991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D3F0E3-DBC7-4C1D-AA94-6716D3FE437D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D3F0E3-DBC7-4C1D-AA94-6716D3FE437D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D3F0E3-DBC7-4C1D-AA94-6716D3FE437D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D3F0E3-DBC7-4C1D-AA94-6716D3FE437D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {312E6007-BF51-41D6-8D56-0741E36130E9}
+	EndGlobalSection
+EndGlobal
